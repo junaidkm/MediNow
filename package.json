@@ -1,0 +1,15 @@
+{
+  "name": "medinow",
+  "version": "1.0.0",
+  "description": "MediNow Telehealth Platform - MERN Application",
+  "private": true,
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
